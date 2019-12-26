@@ -1,16 +1,16 @@
-##Сборка проекта:
+## Сборка проекта:
 Из домашней директории(CaptchaService): mvn package 
   
-##Запуск приложения:
+## Запуск приложения:
 Из домашней директории(CaptchaService):
 1) linux - "java -jar target/CaptchaService-1.0.jar \<CAPTCHA LIFETIME\>"  
 2) windows - "java -jar target\CaptchaService-1.0.jar \<CAPTCHA LIFETIME\>"  
 CAPTCHA LIFETIME - время жизни капчи в минутах (возможно задание дробным числом, по умолчанию 3 минуты)  
   
-##Вызов справки
+## Вызов справки
 java -jar CaptchaService-1.0.jar \<-h | --help\>
 
-##Детали реализации 
+## Детали реализации 
 Сервер поднимается на localhost порт 8080 (изменить адрес и порт можно в application.properties)   
   
 GET запрос localhost:8080/generate/ возвращает капчу, 
